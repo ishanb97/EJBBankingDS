@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Bankserv</servlet-name>
+        <servlet-class>pack2.Bankserv</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Depserv</servlet-name>
+        <servlet-class>pack2.Depserv</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Withserv</servlet-name>
+        <servlet-class>pack2.Withserv</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Check</servlet-name>
+        <servlet-class>pack2.Check</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Bankserv</servlet-name>
+        <url-pattern>/Bankserv</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Depserv</servlet-name>
+        <url-pattern>/Depserv</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Withserv</servlet-name>
+        <url-pattern>/Withserv</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Check</servlet-name>
+        <url-pattern>/Check</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
